@@ -1,0 +1,10 @@
+const {user,loading} = useSelector((state) => state.app);
+  const dispatch = useDispatch();
+ 
+    useEffect(() => {
+      dispatch(showUsers());
+    }, [dispatch])
+
+
+
+import { showUsers } from '../app/features/auth/authSlice';
